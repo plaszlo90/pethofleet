@@ -8,6 +8,7 @@ export const SITE = {
   address: "4501 Kemecse, Móricz Zsigmond utca 76.",
   mapsUrl: "https://maps.google.com/?q=48.0688802,21.7999082",
   mapsEmbed: "https://maps.google.com/maps?q=48.0688802,21.7999082&hl=hu&z=17&output=embed",
+  cegJegyzekSzam: "15-09-090722",
   adoSzam: "32146754-2-15",
   euAdoSzam: "HU32146754",
 } as const;

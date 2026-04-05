@@ -36,6 +36,7 @@ export default function AszfPage() {
           <p>
             Cégnév: {SITE.name}<br />
             Székhely: {SITE.address}<br />
+            Cégjegyzékszám: {SITE.cegJegyzekSzam}<br />
             Adószám: {SITE.adoSzam}<br />
             EU adószám: {SITE.euAdoSzam}<br />
             E-mail: {SITE.email}<br />
