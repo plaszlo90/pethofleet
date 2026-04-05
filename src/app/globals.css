@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fleet brand colors */
+  --color-fleet-orange:      #F97316;
+  --color-fleet-orange-dark: #EA6C0A;
+  --color-fleet-orange-light:#FFF0E6;
+  --color-fleet-dark:        #111827;
+  --color-fleet-surface:     #1F2937;
+  --color-fleet-gray:        #F9FAFB;
+  --color-fleet-gray-mid:    #F3F4F6;
+  --color-fleet-border:      #E5E7EB;
+  --color-text-primary:      #111827;
+  --color-text-secondary:    #6B7280;
+  --color-white:             #FFFFFF;
+  --color-success:           #22C55E;
+  --color-error:             #EF4444;
+
+  /* Typography */
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
