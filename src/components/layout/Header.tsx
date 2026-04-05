@@ -15,14 +15,15 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.jpg"
-              alt={SITE.name}
-              width={140}
-              height={44}
-              className="object-contain"
-              priority
-            />
+            <div className="relative overflow-hidden" style={{ width: 160, height: 44 }}>
+              <Image
+                src="/logo.jpg"
+                alt={SITE.name}
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop nav */}

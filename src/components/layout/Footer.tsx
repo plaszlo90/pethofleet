@@ -11,14 +11,15 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <div className="bg-white rounded-xl px-3 py-2 inline-block">
-                <Image
-                  src="/logo.jpg"
-                  alt={SITE.name}
-                  width={130}
-                  height={40}
-                  className="object-contain"
-                />
+              <div className="bg-white rounded-xl overflow-hidden" style={{ width: 150, height: 42 }}>
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/logo.jpg"
+                    alt={SITE.name}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
