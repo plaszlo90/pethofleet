@@ -1,4 +1,4 @@
-import { SITE } from "@/lib/constants";
+import { SITE, BANKSZAMLAK } from "@/lib/constants";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,8 +36,19 @@ export default function AszfPage() {
           <p>
             Cégnév: {SITE.name}<br />
             Székhely: {SITE.address}<br />
+            Cégjegyzékszám: {SITE.cegJegyzekSzam}<br />
+            Adószám: {SITE.adoSzam}<br />
+            EU adószám: {SITE.euAdoSzam}<br />
             E-mail: {SITE.email}<br />
             Weboldal: {SITE.url}
+          </p>
+          <p className="font-semibold mt-4 mb-2">Bankszámlaszámok:</p>
+          <p>
+            {BANKSZAMLAK.map((b) => (
+              <span key={b.bank}>
+                {b.bank}: <span className="font-mono">{b.szam}</span><br />
+              </span>
+            ))}
           </p>
 
           <h2>3. A szolgáltatások leírása</h2>
