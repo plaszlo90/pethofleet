@@ -13,17 +13,23 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-fleet-border)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <div className="relative overflow-hidden" style={{ width: 160, height: 44 }}>
+          <Link href="/" className="flex items-center gap-3">
+            <div style={{ width: 140, height: 44, overflow: "hidden", position: "relative", flexShrink: 0 }}>
               <Image
                 src="/logo.jpg"
                 alt={SITE.name}
-                fill
-                className="object-cover object-center"
+                width={140}
+                height={198}
+                style={{ position: "absolute", top: "50%", transform: "translateY(-50%)" }}
                 priority
               />
             </div>
+            {/* 5 éves badge */}
+            <span className="hidden sm:inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-[var(--color-fleet-orange-light)] text-[var(--color-fleet-orange)]">
+              ★ 5 éve a piacon
+            </span>
           </Link>
 
           {/* Desktop nav */}

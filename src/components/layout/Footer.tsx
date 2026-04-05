@@ -11,15 +11,14 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <div className="bg-white rounded-xl overflow-hidden" style={{ width: 150, height: 42 }}>
-                <div className="relative w-full h-full">
-                  <Image
-                    src="/logo.jpg"
-                    alt={SITE.name}
-                    fill
-                    className="object-cover object-center"
-                  />
-                </div>
+              <div className="bg-white rounded-xl" style={{ width: 140, height: 44, overflow: "hidden", position: "relative" }}>
+                <Image
+                  src="/logo.jpg"
+                  alt={SITE.name}
+                  width={140}
+                  height={198}
+                  style={{ position: "absolute", top: "50%", transform: "translateY(-50%)" }}
+                />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">

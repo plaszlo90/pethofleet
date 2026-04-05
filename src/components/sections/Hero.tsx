@@ -1,15 +1,30 @@
 import Link from "next/link";
+import Image from "next/image";
+
+// Unsplash – fleet of cars, CC0 free to use
+// Photo by Julien Moreau: https://unsplash.com/photos/Zu1nHHEUmZE
+const HERO_IMAGE = "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1920&q=80";
 
 export function Hero() {
   return (
-    <section className="relative bg-[var(--color-fleet-dark)] overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-fleet-dark)] via-[var(--color-fleet-surface)] to-[var(--color-fleet-dark)] opacity-80" />
+    <section className="relative bg-[var(--color-fleet-dark)] overflow-hidden min-h-[560px] md:min-h-[640px]">
+      {/* Background image */}
+      <Image
+        src={HERO_IMAGE}
+        alt="Pethő Fleet Solution – prémium flotta"
+        fill
+        className="object-cover object-center"
+        priority
+        quality={85}
+        sizes="100vw"
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-[var(--color-fleet-dark)]/75" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
         <div className="max-w-3xl">
           <p className="text-[var(--color-fleet-orange)] text-sm font-semibold uppercase tracking-widest mb-4">
-            Pethő Fleet Solution
+            Pethő Fleet Solution — 5 éve megbízható partner
           </p>
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
             Professzionális <br />
