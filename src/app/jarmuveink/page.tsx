@@ -18,7 +18,7 @@ const vehicles = [
     category: "Személyautó",
     tag: "Gazdaságos",
     tagColor: "bg-green-100 text-green-700",
-    image: "https://images.unsplash.com/photo-u6AsEEX0uJA?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2024_Skoda_Octavia_110TSI_Select_front.jpg/1200px-2024_Skoda_Octavia_110TSI_Select_front.jpg",
     description:
       "Megbízható, takarékos és tágas — az Octavia ideális választás napi ingázáshoz, üzleti utakhoz és hosszabb transzferekhez egyaránt.",
     specs: [
@@ -33,7 +33,7 @@ const vehicles = [
     category: "Kisteherautó / Busz",
     tag: "Csapat & Teher",
     tagColor: "bg-blue-100 text-blue-700",
-    image: "https://images.unsplash.com/photo-jU7f2AXuKnM?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2024_Ford_Transit_Custom_Limited_TDCi_-_1996cc_2.0_%28136PS%29_Diesel_-_Artisan_Red_-_08-2024%2C_Front.jpg/1200px-2024_Ford_Transit_Custom_Limited_TDCi_-_1996cc_2.0_%28136PS%29_Diesel_-_Artisan_Red_-_08-2024%2C_Front.jpg",
     description:
       "A Ford Transit Custom a tökéletes megoldás csapatszállításra, rendezvényre, illetve kisebb áruszállítási feladatokra. Rugalmas és megbízható.",
     specs: [
@@ -48,7 +48,7 @@ const vehicles = [
     category: "Prémium Személyautó",
     tag: "Business",
     tagColor: "bg-slate-100 text-slate-700",
-    image: "https://images.unsplash.com/photo-L9Mcwc6hmW8?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/VW_Passat_Variant_Elegance_%28B9%29_%E2%80%93_f_18052025.jpg/1200px-VW_Passat_Variant_Elegance_%28B9%29_%E2%80%93_f_18052025.jpg",
     description:
       "A Volkswagen Passat az üzleti élet klasszikusa. Elegáns megjelenés, kényelmes belső tér és kiváló menetdinamika — tárgyalókra, VIP transzferre.",
     specs: [
@@ -63,7 +63,7 @@ const vehicles = [
     category: "Prémium Limuzin",
     tag: "Prémium",
     tagColor: "bg-orange-100 text-orange-700",
-    image: "https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2024_%C5%A0koda_Superb_%28cropped%29.jpg/1200px-2024_%C5%A0koda_Superb_%28cropped%29.jpg",
     description:
       "A Škoda Superb flottánk zászlóshajója. Luxus kivitel, panorámatető, masszázs ülések — amikor csak a legjobb elég. Prémium üzleti és VIP igényekre.",
     specs: [
