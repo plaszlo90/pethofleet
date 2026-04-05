@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { SITE } from "@/lib/constants";
 
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

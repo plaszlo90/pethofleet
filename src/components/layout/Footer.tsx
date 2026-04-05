@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { SITE, NAV_LINKS } from "@/lib/constants";
-import { Mail } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-[var(--color-fleet-dark)] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
-          <div>
+          <div className="md:col-span-1">
             <p className="text-xl font-bold mb-3">
               Pethő{" "}
               <span className="text-[var(--color-fleet-orange)]">Fleet</span>
@@ -52,7 +52,37 @@ export function Footer() {
                   {SITE.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={SITE.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+                >
+                  <MapPin size={16} className="mt-0.5 flex-shrink-0" />
+                  {SITE.address}
+                </a>
+              </li>
             </ul>
+          </div>
+
+          {/* Google Maps */}
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-4">
+              Térkép
+            </p>
+            <div className="rounded-xl overflow-hidden border border-white/10">
+              <iframe
+                src={SITE.mapsEmbed}
+                width="100%"
+                height="160"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Pethő Fleet Solution – térkép"
+              />
+            </div>
           </div>
         </div>
 
