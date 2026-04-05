@@ -11,6 +11,8 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
+  { label: "Járműveink", href: "/jarmuveink" },
   { label: "Szolgáltatások", href: "/szolgaltatasok" },
+  { label: "Rólunk", href: "/rolunk" },
   { label: "Kapcsolat", href: "/kapcsolat" },
 ] as const;
