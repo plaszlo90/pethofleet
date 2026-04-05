@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE } from "@/lib/constants";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -13,11 +14,15 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-[var(--color-fleet-dark)]">
-              Pethő{" "}
-              <span className="text-[var(--color-fleet-orange)]">Fleet</span>
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.jpg"
+              alt={SITE.name}
+              width={140}
+              height={44}
+              className="object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

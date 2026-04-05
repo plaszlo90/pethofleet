@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE, NAV_LINKS } from "@/lib/constants";
 import { Mail, MapPin } from "lucide-react";
 
@@ -9,10 +10,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <p className="text-xl font-bold mb-3">
-              Pethő{" "}
-              <span className="text-[var(--color-fleet-orange)]">Fleet</span>
-            </p>
+            <Link href="/" className="inline-block mb-4">
+              <div className="bg-white rounded-xl px-3 py-2 inline-block">
+                <Image
+                  src="/logo.jpg"
+                  alt={SITE.name}
+                  width={130}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               {SITE.description}
             </p>
